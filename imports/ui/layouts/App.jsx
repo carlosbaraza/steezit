@@ -14,8 +14,8 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      showAppBar: false,
-      appBarTitle: 'Round Tree #1'
+      showAppBar: true,
+      appBarTitle: 'Steezid'
     }
   }
 
