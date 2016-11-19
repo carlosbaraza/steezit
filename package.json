@@ -1,0 +1,27 @@
+{
+  "name": "roundtree1",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.5.1",
+    "aws-sdk": "^2.6.9",
+    "blueimp-file-upload": "^9.12.5",
+    "crypto": "0.0.3",
+    "jquery": "^3.1.1",
+    "justifiedGallery": "^3.6.2",
+    "lodash": "^4.16.4",
+    "material-ui": "^0.16.0",
+    "meteor-node-stubs": "^0.2.3",
+    "normalize.css": "^5.0.0",
+    "react": "^15.4.0",
+    "react-addons-css-transition-group": "^15.3.2",
+    "react-addons-pure-render-mixin": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-grid-gallery": "^0.2.5",
+    "react-router": "^2.8.1",
+    "react-tap-event-plugin": "^2.0.1",
+    "toastr": "^2.1.2"
+  }
+}

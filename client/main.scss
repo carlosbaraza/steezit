@@ -1,0 +1,101 @@
+html, body, .container, #render-target {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+.mu-app-bar {
+  transition: all 0.3s;
+}
+
+.content {
+  height: 100%;
+
+  .new-gallery-container {
+    height: 100%;
+
+    .new-gallery-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -50;
+
+      img {
+        /* Set rules to fill background */
+        min-height: 100%;
+        min-width: 100%;
+
+        /* Set up proportionate scaling */
+        height: 100%;
+
+        /* Set up positioning */
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .new-gallery-container-inner {
+      height: 100%;
+      position: relative;
+      margin: auto;
+
+      width: 80%;
+
+      @media screen and (min-width: 768px) {
+        width: 60%;
+      }
+
+      @media screen and (min-width: 1024px) {
+        width: 40%;
+      }
+
+      .new-gallery-outer {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .new-gallery-inner {
+
+        }
+      }
+    }
+  }
+}
+
+.show-gallery-container {
+  height: 100%;
+  position: relative;
+  margin: auto;
+  width: 60%;
+
+  .show-gallery {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.tile img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.tile img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
