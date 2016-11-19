@@ -14,15 +14,8 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      showAppBar: true,
       appBarTitle: 'Steezid'
     }
-  }
-
-  toggleAppBar(showAppBar) {
-    this.setState({
-      showAppBar: showAppBar === undefined ? !this.state.showAppBar : showAppBar
-    });
   }
 
   setAppBarTitle(appBarTitle) {
@@ -45,7 +38,6 @@ export default class App extends Component {
     const clonedChildren = children && React.Children.map(children,
       child => React.cloneElement(child, {
         key: location.pathname,
-        toggleAppBar: this.toggleAppBar.bind(this),
         setAppBarTitle: this.setAppBarTitle.bind(this),
         gallery
       })
@@ -56,7 +48,6 @@ export default class App extends Component {
         <div className="container">
           <AppBar
             title={this.state.appBarTitle}
-            showAppBar={this.state.showAppBar}
           />
 
           <div className="content">
